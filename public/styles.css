@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    font-family: "Lato", sans-serif;
+}
+nav h1, nav h2{
+    font-family: roboto mono, roboto, serif 
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 4em;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.25em;
+    text-align: center;
+}
+nav {
+    color: white;
+    padding: 2%;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+div {
+    padding: 2%;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 50%;
+}
+td {
+    padding: 15px;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
