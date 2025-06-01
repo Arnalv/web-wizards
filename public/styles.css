@@ -157,10 +157,16 @@ nav {
     #top {
   position: sticky;
   top: -21em; /* Equal to the height difference between header-outer and header-inner */
-  mix-blend-mode: difference;
 }
  nav {
     justify-content: center;
+ }
+ .Intro {
+    display: block;
+ }
+ .Intro-box {
+    width: auto;
+    margin-bottom: 20px;
  }
 
 }
