@@ -163,10 +163,14 @@ nav {
     p {
     text-align: left;
     }
-    #top {
+    #top:not(.resource-nav) {
   position: sticky;
   top: -22em; /* Equal to the height difference between header-outer and header-inner */
-}
+    }
+    #top .resource-nav {
+        position: sticky;
+        top: -1em;
+    }
  nav {
     justify-content: center;
  }
