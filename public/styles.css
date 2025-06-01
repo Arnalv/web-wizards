@@ -101,6 +101,9 @@ td {
 .Intro {
     display: flex;
 }
+
+
+
 .Intro-box {
     text-align: center;
     font-weight:bolder;
@@ -115,6 +118,7 @@ td {
 nav {
     display: flex;
     top: 1%;
+    align-items: center;
 }
 
 
@@ -125,15 +129,19 @@ nav a {
     font-size: larger;
 }
 
-.navbar {
-    position: fixed;
-    width: 100%;
+#home {
+    margin-left: auto;
 }
-
 #top {
   position: sticky;
   top: -22em; /* Equal to the height difference between header-outer and header-inner */
   border-radius: 10px 10px 25px 25px;
+}
+
+#logo {
+    height: 4em;
+    margin-right: 2%;
+
 }
 
 nav {
@@ -143,6 +151,7 @@ nav {
 #header {
     margin-bottom: 1%;
 }
+
 
 @media screen and (max-width: 600px) { 
 
@@ -168,5 +177,11 @@ nav {
     width: auto;
     margin-bottom: 20px;
  }
-
+  #logo {
+    display: none;
+    position: none;
+  }
+  #home {
+    margin-left:0%;
+}
 }
