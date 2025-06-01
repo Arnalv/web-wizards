@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+body {
+    background-color: #e8e8ed66;
+}
 * {
     font-family: "Lato", sans-serif;
 }
@@ -37,6 +40,7 @@ p {
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
 }
+
 
 div {
     padding: 2%;
@@ -89,16 +93,34 @@ td {
     text-align: center;
     width: 100vh;
     font-weight:bolder;
+    border-radius: 10px;
+    margin: 10px;
+    
 }
 
+.Intro {
+    display: flex;
+}
+.Intro-box {
+    text-align: center;
+    font-weight:bolder;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 1%;
+    width: 33%;
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: black;
+}
 nav {
     display: flex;
     top: 1%;
 }
 
+
 nav a {
     color: white;
-    margin-right: 1%;
+    margin-right: 2%;
     font-weight: bolder;
     font-size: larger;
 }
@@ -110,7 +132,8 @@ nav a {
 
 #top {
   position: sticky;
-  top: -30%; /* Equal to the height difference between header-outer and header-inner */
+  top: -21em; /* Equal to the height difference between header-outer and header-inner */
+  border-radius: 10px 10px 25px 25px;
 }
 
 nav {
@@ -122,13 +145,22 @@ nav {
 }
 
 @media screen and (max-width: 600px) { 
-    #top {
-        position: sticky;
-        top: -47%; /* Equal to the height difference between header-outer and header-inner */
-    }  
 
     nav a {
     margin-right: 5%;
+    text-shadow: 2px 2px 5px black;
+    }
+
+    p {
+    text-align: left;
+    }
+    #top {
+  position: sticky;
+  top: -21em; /* Equal to the height difference between header-outer and header-inner */
+  mix-blend-mode: difference;
 }
+ nav {
+    justify-content: center;
+ }
 
 }
