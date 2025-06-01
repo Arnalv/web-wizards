@@ -4,7 +4,7 @@
 * {
     font-family: "Lato", sans-serif;
 }
-nav h1, nav h2{
+#header h1, #header h2{
     font-family: roboto mono, roboto, serif 
 }
 
@@ -31,9 +31,8 @@ p {
     font-size: 1.25em;
     text-align: center;
 }
-nav {
+#top {
     color: white;
-    padding: 2%;
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
@@ -63,4 +62,73 @@ td {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+}
+
+.win{
+    background-color: #357EC7;
+    padding: 1%;
+    
+}
+
+.mac {
+    background-color: #FF3B30;
+    padding: 1%;
+}
+
+.lin {
+    background-color: #f0b912;
+    padding: 1%;
+}
+.scorebox {
+    color: white;
+    text-align: center;
+    width: 100vh;
+    font-weight:bolder;
+}
+
+nav {
+    display: flex;
+    top: 1%;
+}
+
+nav a {
+    color: white;
+    margin-right: 1%;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
+#top {
+  position: sticky;
+  top: -30%; /* Equal to the height difference between header-outer and header-inner */
+}
+
+nav {
+  position: sticky;
+  top: 1; 
+}
+#header {
+    margin-bottom: 1%;
+}
+
+@media screen and (max-width: 600px) { 
+    #top {
+        position: sticky;
+        top: -47%; /* Equal to the height difference between header-outer and header-inner */
+    }  
+
+    nav a {
+    margin-right: 5%;
+}
+
 }
