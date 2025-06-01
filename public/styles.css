@@ -132,7 +132,7 @@ nav a {
 
 #top {
   position: sticky;
-  top: -21em; /* Equal to the height difference between header-outer and header-inner */
+  top: -22em; /* Equal to the height difference between header-outer and header-inner */
   border-radius: 10px 10px 25px 25px;
 }
 
@@ -156,7 +156,7 @@ nav {
     }
     #top {
   position: sticky;
-  top: -21em; /* Equal to the height difference between header-outer and header-inner */
+  top: -22em; /* Equal to the height difference between header-outer and header-inner */
 }
  nav {
     justify-content: center;
